@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mycalculator.WiFiDataAcquisition.Activity.SelectApActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="SSID"
+            android:id="@+id/textView8"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:singleLine="false"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="平均强度"
+            android:id="@+id/textView9"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/textView10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="覆盖点数"
+            android:id="@+id/textView10"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="2px"
+        android:layout_width="400dp"
+        android:background="@color/colorSplit"
+
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/selectApListView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:onClick="select_finish_event"
+        android:id="@+id/select_finish_button"
+        android:text="完 成"/>
+</LinearLayout>
